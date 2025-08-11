@@ -1,0 +1,88 @@
+
+.contactez-nous-container {
+  max-width: 700px;
+  min-height: 400px;
+  margin: 60px auto;
+  padding: 56px 48px 48px 48px;
+  background: linear-gradient(135deg, #f8fafc 60%, #e3f0ff 100%);
+  border-radius: 18px;
+  box-shadow: 0 6px 32px rgba(0,0,0,0.13);
+  text-align: center;
+  border: 1.5px solid #e0e7ef;
+  position: relative;
+  animation: fadeInContact 0.7s cubic-bezier(.4,0,.2,1);
+}
+
+@keyframes fadeInContact {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.contactez-nous-container h2 {
+  margin-bottom: 22px;
+  color: #1a237e;
+  font-size: 2.1em;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+/* Formulaire de contact */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 18px;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.form-group label {
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #1a237e;
+}
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #b0bec5;
+  border-radius: 6px;
+  font-size: 1em;
+  background: #f7fafd;
+  transition: border 0.2s;
+}
+.form-group input:focus,
+.form-group textarea:focus {
+  border: 1.5px solid #1976d2;
+  outline: none;
+}
+.contact-submit-btn {
+  background: #1976d2;
+  color: #fff;
+  border: none;
+  padding: 10px 0;
+  border-radius: 6px;
+  font-size: 1.08em;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background 0.2s;
+}
+.contact-submit-btn:hover {
+  background: #0d47a1;
+}
+
+@media (max-width: 900px) {
+  .contactez-nous-container {
+    max-width: 98vw;
+    padding: 24px 2vw 24px 2vw;
+  }
+  .contactez-nous-container h2 {
+    font-size: 1.3em;
+  }
+  .contactez-nous-container li {
+    font-size: 1em;
+  }
+}

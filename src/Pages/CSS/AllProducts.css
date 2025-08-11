@@ -1,0 +1,137 @@
+/* Responsive design */
+@media (max-width: 360px) {
+    .all-products {
+        margin: 10px;
+        padding: 10px;
+    }
+    .all-products-header h1 {
+        font-size: 20px;
+    }
+    .all-products-header p {
+        font-size: 12px;
+    }
+    .all-products-grid {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+}
+.all-products {
+    margin: 100px 170px;
+    gap: 10px;
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef, #dee2e6);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.all-products-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.all-products-header h1 {
+    font-size: 48px;
+    font-weight: 600;
+    color: #171717;
+    margin-bottom: 10px;
+}
+
+.all-products-header p {
+    font-size: 18px;
+    color: #626262;
+}
+
+.all-products-indexSort {
+    display: flex;
+    margin: 0px 20px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.all-products-indexSort p {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.all-products-indexSort span {
+    font-weight: 600;
+}
+
+.all-products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+.all-products-grid img{
+    width: 95%;
+}
+
+/* Responsive design */
+@media (max-width: 1280px) {
+    .all-products {
+        margin: 80px 60px;
+        padding: 30px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .all-products {
+        margin: 80px 40px;
+    }
+    
+    .all-products-header h1 {
+        font-size: 42px;
+    }
+}
+
+@media (max-width: 768px) {
+    .all-products {
+        margin: 80px 20px;
+        padding: 25px;
+    }
+    
+    .all-products-header h1 {
+        font-size: 36px;
+    }
+    
+    .all-products-header p {
+        font-size: 16px;
+    }
+    
+    .all-products-indexSort {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    
+    .all-products-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .all-products {
+        margin: 80px 15px;
+        padding: 20px;
+    }
+    
+    .all-products-header h1 {
+        font-size: 28px;
+    }
+    
+    .all-products-header p {
+        font-size: 14px;
+    }
+    
+    .all-products-indexSort p {
+        font-size: 16px;
+    }
+    
+    .all-products-grid {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 15px;
+    }
+}

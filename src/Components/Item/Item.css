@@ -1,0 +1,125 @@
+.item{
+    width: 280px;
+    max-width: 100%;
+}
+.item img{
+    width: 280px;
+}
+
+
+
+.item-image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.item-image-container img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.item-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    gap: 5px;
+}
+
+.add-to-cart-btn {
+    background: linear-gradient(135deg, #8d41ff, #6b2fff, #5a1fcc);
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    box-shadow: 0 4px 15px rgba(141, 65, 255, 0.3);
+    white-space: nowrap;
+    width: 90%
+}
+
+
+
+
+
+.cart-icon {
+    font-size: 14px;
+    display: inline-block;
+}
+
+.add-to-cart-btn:hover {
+    background: linear-gradient(135deg, #6b2fff, #8d41ff, #5a1fcc);
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(141, 65, 255, 0.4);
+}
+
+.item p{
+    margin: 6px 0px;
+}
+.item-prices {
+  display: flex;
+  gap: 20px;
+}
+.item-price-new {
+  color: #374141;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.item:hover{
+    transform: scale(1.05);
+    transition: 0.6s;
+}
+
+/*La responsive */
+@media(max-width:1280px){
+    .item{
+        width: 220px;
+        font-size: 14px;
+    }
+    .item img{
+        width: 220px;
+    }
+    
+}
+@media(max-width:1025px){
+    .item{
+        width: 170px;
+        font-size: 13px;
+    }
+    .item img{
+        width: 170px;
+    }
+    .add-to-cart-btn {
+        padding: 8px 16px;
+        font-size: 11px;
+    }
+    
+}
+
+@media(max-width:800px){
+    .item{
+        width: 170px;
+        font-size: 13px;
+    }
+    .item img{
+        width: 150px;
+    }
+}
+@media(max-width:500px){
+    .item{
+        width: 160px;
+    }
+    .item img{
+        width: 160px;
+    }
+}

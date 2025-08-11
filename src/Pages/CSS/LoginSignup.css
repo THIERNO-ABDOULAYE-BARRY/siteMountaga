@@ -1,0 +1,141 @@
+/* Général */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f9;
+}
+
+/* Conteneur principal */
+.loginsignup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+  background: linear-gradient(135deg, #f0f2f5, #e6ebf1);
+}
+
+/* Carte du formulaire */
+.loginsignup-container {
+  background-color: #ffffff;
+  padding: 2.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 420px;
+}
+
+/* Titre */
+.loginsignup-container h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #333;
+  font-size: 1.8rem;
+}
+
+/* Formulaire */
+.loginsignup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+/* Groupes de champs */
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #444;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"] {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.2s ease;
+}
+
+.form-group input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Case à cocher */
+.checkbox-group {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.checkbox-group label a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.checkbox-group label a:hover {
+  text-decoration: underline;
+}
+
+/* Bouton */
+.submit-button {
+  background-color: #007bff;
+  color: white;
+  padding: 0.85rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+/* Lien vers connexion */
+.loginsignup-login {
+  text-align: center;
+  font-size: 0.95rem;
+  margin-top: 1rem;
+  color: #444;
+}
+
+.loginsignup-login a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.loginsignup-login a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .loginsignup-container {
+    padding: 2rem 1rem;
+  }
+
+  .submit-button {
+    font-size: 0.95rem;
+  }
+}
+@media (max-width: 360px) {
+  .loginsignup-container {
+    padding: 1rem 0.5rem;
+  }
+  .submit-button {
+    font-size: 0.85rem;
+    padding: 0.7rem;
+  }
+}
